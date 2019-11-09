@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Login Successfully Executed]]>
+    </line>
+    <line>
+      <![CDATA[Captureing ScreenShot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="blank"href=Sat_Nov_09_17_33_07_IST_2019.jpg>ScreenShot</a>]]>
+    </line>
+    <line>
+      <![CDATA[Captureing ScreenShot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="blank"href=Sat_Nov_09_17_33_15_IST_2019.jpg>ScreenShot</a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Data Driven Basic" duration-ms="11166" started-at="2019-11-09T12:03:04Z" finished-at="2019-11-09T12:03:15Z">
+    <groups>
+    </groups>
+    <test name="Bank Manager Login Test" duration-ms="3640" started-at="2019-11-09T12:03:04Z" finished-at="2019-11-09T12:03:08Z">
+      <class name="com.learn.testcases.BankManagerLoginTest">
+        <test-method status="FAIL" signature="loginAsBankManager()[pri:0, instance:com.learn.testcases.BankManagerLoginTest@1d296da]" name="loginAsBankManager" duration-ms="3178" started-at="2019-11-09T17:33:04Z" finished-at="2019-11-09T17:33:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.learn.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Login Successfully Executed]]>
+            </line>
+            <line>
+              <![CDATA[Captureing ScreenShot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="blank"href=Sat_Nov_09_17_33_07_IST_2019.jpg>ScreenShot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManager -->
+      </class> <!-- com.learn.testcases.BankManagerLoginTest -->
+    </test> <!-- Bank Manager Login Test -->
+    <test name="Add Customer Login Test" duration-ms="7475" started-at="2019-11-09T12:03:08Z" finished-at="2019-11-09T12:03:15Z">
+      <class name="com.learn.testcases.AddCustomerLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learn.testcases.AddCustomerLoginTest@7e6f74c]" name="setUp" is-config="true" duration-ms="12437" started-at="2019-11-09T17:32:51Z" finished-at="2019-11-09T17:33:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.learn.testcases.AddCustomerLoginTest@7e6f74c]" name="addCustomer" duration-ms="7055" started-at="2019-11-09T17:33:08Z" data-provider="getData" finished-at="2019-11-09T17:33:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[432678.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer added successfully]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.learn.testcases.AddCustomerLoginTest.addCustomer(AddCustomerLoginTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Captureing ScreenShot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="blank"href=Sat_Nov_09_17_33_15_IST_2019.jpg>ScreenShot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learn.testcases.AddCustomerLoginTest@7e6f74c]" name="tearDown" is-config="true" duration-ms="941" started-at="2019-11-09T17:33:15Z" finished-at="2019-11-09T17:33:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.learn.testcases.AddCustomerLoginTest -->
+    </test> <!-- Add Customer Login Test -->
+  </suite> <!-- Data Driven Basic -->
+</testng-results>
