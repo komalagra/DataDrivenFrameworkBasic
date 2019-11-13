@@ -1,7 +1,14 @@
+com\learn\utilities\MonitoringMail$SMTPAuthenticator.class
 com\learn\testcases\AddCustomerLoginTest.class
+com\learn\testcases\OpenAccountTest.class
+com\learn\utilities\TestConfig.class
 com\learn\utilities\ExcelReader.class
+com\learn\utilities\ExtentManager.class
+com\learn\utilities\MonitoringMail.class
 com\learn\listeners\CustomListeners.class
+com\learn\utilities\MonitoringMail$1.class
 com\learn\rough\TestTimeStamp.class
+com\learn\rough\TestHostAdd.class
 com\learn\utilities\TestUtil.class
 com\learn\base\TestBase.class
 com\learn\rough\TestProperties.class

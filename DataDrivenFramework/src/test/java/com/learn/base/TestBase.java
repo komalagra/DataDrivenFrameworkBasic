@@ -7,16 +7,23 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.apache.xmlbeans.impl.xb.xmlconfig.ConfigDocument.Config;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import com.learn.utilities.ExcelReader;
+import com.learn.utilities.ExtentManager;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class TestBase {
 	
@@ -27,6 +34,9 @@ public class TestBase {
 	public static  Logger log = Logger.getLogger("devpinoyLogger");
 	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\TestData.xlsx");
 	public static WebDriverWait wait;
+	public ExtentReports rep = ExtentManager.getInstance();
+	public static ExtentTest test;
+	public static String browser;
 	
 			
 	@BeforeSuite
@@ -63,6 +73,14 @@ public class TestBase {
 				e.printStackTrace();
 			}
 			
+			if(System.getenv("browser")!=null && !System.getenv("browser").isEmpty()){
+				browser=System.getenv("browser");
+			}else{
+				browser=Config.getProperty("browser");
+			}
+			
+			Config.setProperty("browser", browser);
+			
 			if(Config.getProperty("browser").equals("firefox")){
 				driver = new FirefoxDriver();
 			}else if(Config.getProperty("browser").equals("chrome")){
@@ -79,6 +97,49 @@ public class TestBase {
 		}
 	}
 	
+	//for locator writing in easy way
+	public void click(String locator)
+	{	
+		if(locator.endsWith("_CSS")){
+		driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
+		}else if(locator.endsWith("_XPATH")){
+			driver.findElement(By.xpath(OR.getProperty(locator))).click();
+		}else if(locator.endsWith("_ID")){
+			driver.findElement(By.id(OR.getProperty(locator))).click();
+		}
+		
+		test.log(LogStatus.INFO, " clicking on : "+locator);
+	}
+	
+	//for locator writing in easy way
+	public void type(String locator, String value)
+	{
+		if(locator.endsWith("_CSS")){
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
+		}else if(locator.endsWith("_XPATH")){
+			driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
+		}else if(locator.endsWith("_ID")){
+			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
+		}
+		test.log(LogStatus.INFO, " Typing in : "+locator+ " entered value as " +value);
+	}
+	
+	static WebElement dropDown;
+	
+	public void select(String locator, String value)
+	{
+		if(locator.endsWith("_CSS")){
+			dropDown = driver.findElement(By.cssSelector(OR.getProperty(locator)));
+		}else if(locator.endsWith("_XPATH")){
+			dropDown = driver.findElement(By.xpath(OR.getProperty(locator)));
+		}else if(locator.endsWith("_ID")){
+			dropDown = driver.findElement(By.id(OR.getProperty(locator)));
+		}	
+		
+		Select select = new Select(dropDown);
+		select.selectByVisibleText(value);
+		test.log(LogStatus.INFO, " Selecting from dropdown : "+locator+ " value as " +value);
+	}
 	
 	public boolean isElementPresent(By by){
 		

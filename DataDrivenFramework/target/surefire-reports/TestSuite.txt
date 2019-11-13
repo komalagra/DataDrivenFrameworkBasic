@@ -1,20 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 25.898 sec <<< FAILURE! - in TestSuite
-loginAsBankManager(com.learn.testcases.BankManagerLoginTest)  Time elapsed: 3.622 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at org.testng.Assert.assertTrue(Assert.java:51)
-	at com.learn.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:21)
-
-addCustomer(com.learn.testcases.AddCustomerLoginTest)  Time elapsed: 7.446 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at org.testng.Assert.assertTrue(Assert.java:51)
-	at com.learn.testcases.AddCustomerLoginTest.addCustomer(AddCustomerLoginTest.java:30)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 38.241 sec - in TestSuite

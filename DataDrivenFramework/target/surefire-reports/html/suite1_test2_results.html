@@ -12,75 +12,89 @@
 <body>
 <h1>Add Customer Login Test</h1>
 <p>
-  Test duration: 20.433s
+  Test duration: 18.915s
 </p>
 
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.learn.testcases.AddCustomerLoginTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  addCustomer
+                  addCustomerTest
       </td>
   <td class="duration">
-    7.055s
+    0.000s
   </td>
   <td class="result">
+                                 	<i>Reason: </i>
+      	<span class="dependency">Skipping the test as the run mode is No</span>
+          
+          <i>Method arguments: </i><span class="arguments">{postCode=K456AB, alerttext=Customer added successfully, lastName=Jain, firstName=Kittu, runmode=N}</span><br />
+    
         
-          <i>Method arguments: </i><span class="arguments">"Joy", "Jain", "432678.0", "Customer added successfully"</span><br />
-    
-            <div class="testOutput">
-                        Captureing ScreenShot
-                                <a target="blank"href=Sat_Nov_09_17_33_15_IST_2019.jpg>ScreenShot</a>
-                  </div>
-    
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:93)<br />
-              org.testng.Assert.failNotEquals(Assert.java:512)<br />
-              org.testng.Assert.assertTrue(Assert.java:41)<br />
-              org.testng.Assert.assertTrue(Assert.java:51)<br />
-              com.learn.testcases.AddCustomerLoginTest.addCustomer(AddCustomerLoginTest.java:30)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:661)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:744)<br />
-              org.testng.TestRunner.run(TestRunner.java:602)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:380)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:289)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1226)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1144)<br />
-              org.testng.TestNG.run(TestNG.java:1115)<br />
-              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)<br />
-              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)<br />
-              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
-                </div>
       </td>
 </tr>
       </table>
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.learn.testcases.AddCustomerLoginTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  addCustomerTest
+      </td>
+  <td class="duration">
+    6.285s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{postCode=123A67, alerttext=Customer added successfully, lastName=Agarwal, firstName=Ruhi, runmode=Y}</span><br />
+    
+        
 
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  addCustomerTest
+      </td>
+  <td class="duration">
+    6.262s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{postCode=A789PR, alerttext=Customer added successfully, lastName=Patel, firstName=Akshay, runmode=Y}</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  addCustomerTest
+      </td>
+  <td class="duration">
+    6.368s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{postCode=432678.0, alerttext=Customer added successfully, lastName=Jain, firstName=Joy, runmode=Y}</span><br />
+    
+        
+
+      </td>
+</tr>
+      </table>
   
 </body>
 </html>
